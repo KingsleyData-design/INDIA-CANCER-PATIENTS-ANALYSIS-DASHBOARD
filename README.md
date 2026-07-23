@@ -1,5 +1,4 @@
-
-# India Cancer Patients Analysis (2022–2025)
+# INDIA CANCER PATIENTS ANALYSIS (2022-2025)
 
 ## Project Overview
 Analysis of 100,000 cancer patient records across India from 2022 to 2025. This is the fourth project in a five-part portfolio series, covering the same dataset across Excel, Power BI, SQL, and Python. The analysis explores patient demographics, cancer types, disease staging, treatment approaches / type and survival outcomes. After cleaning the data in Excel, I added an Age_Group column to make age-based analysis easier to work with, then carried that same dataset across Power BI, SQL, and Python for the rest of the analysis.
