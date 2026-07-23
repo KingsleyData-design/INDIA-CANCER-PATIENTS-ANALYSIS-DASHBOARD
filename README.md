@@ -33,10 +33,10 @@
 
 ## WHAT I BUILT IT IN AND WHY FOUR TIMES?
 
-**Excel** — cleaned and explored the data, first pass at survival and outcome breakdowns.
-**Power BI** — the main dashboard. Cancer Type and Gender as slicers, with charts covering survival by cancer type, survival months by treatment, age group, outcomes by stage, and a map of patients across Indian states.
-**SQL** — same KPIs rebuilt as queries against the dataset.
-**Python** — same analysis again in a notebook, pandas and matplotlib doing the work.
+- **Excel** — cleaned and explored the data, first pass at survival and outcome breakdowns.
+- **Power BI** — the main dashboard. Cancer Type and Gender as slicers, with charts covering survival by cancer type, survival months by treatment, age group, outcomes by stage, and a map of patients across Indian states.
+- **SQL** — same KPIs rebuilt as queries against the dataset.
+- **Python** — same analysis again in a notebook, pandas and matplotlib doing the work.
 
 Same reasoning as the rest of the portfolio — four tools, same questions, because the point isn't the dashboard, it's proving the logic holds up across all of them.
 
