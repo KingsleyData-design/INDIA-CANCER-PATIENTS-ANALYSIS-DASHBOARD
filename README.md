@@ -1,14 +1,5 @@
 # INDIA CANCER PATIENTS ANALYSIS (2022-2025)
 
-## Project Overview
-Analysis of 100,000 cancer patient records across India from 2022 to 2025. This is the fourth project in a five-part portfolio series, covering the same dataset across Excel, Power BI, SQL, and Python. The analysis explores patient demographics, cancer types, disease staging, treatment approaches / type and survival outcomes. After cleaning the data in Excel, I added an Age_Group column to make age-based analysis easier to work with, then carried that same dataset across Power BI, SQL, and Python for the rest of the analysis.
-
-## Dataset
-- **Source:** Kaggle
-- **Records:** 100,000 rows
-- **Timeframe:** 2022–2025
-- **Columns:** Patient_ID, Age, Gender, State, City, Hospital_Name, Cancer_Type, Stage, Treatment_Type, Diagnosis_Date, Survival_Months, Status, Age_Group
-
 ## Key Metrics
 
 | Metric | Value |
@@ -21,18 +12,40 @@ Analysis of 100,000 cancer patient records across India from 2022 to 2025. This 
 | Cancer Types Covered | 9 |
 | Total hospitals | 10 |
 
-## Key Insights
-- Breast Cancer is the most common diagnosis in this dataset, followed by Oral and Cervical Cancer.
-- Most patients are diagnosed at Stage III or IV rather than early stages.
-- Patients on Palliative Care have lower average survival months than those on Surgery or Targeted Therapy.
-- Patient volume is close to even across all 12 hospitals and states — no single location stands out, likely due to how the dataset was generated.
-- Adults (41–60) make up the largest age group, followed by Seniors (60+).
 
-## Tools & Approach
-- **Excel:** Data cleaning, pivot tables, chart dashboard. Age_Group column built with a nested IF formula
-- **Power BI:** Interactive chart dashboard, using DAX measures for KPI cards
-- **SQL (SSMS):** Queries matching each dashboard visual — cancer type, stage, treatment, hospital, and state breakdowns
-- **Python (Jupyter):** Same analysis using Pandas, Matplotlib, and Seaborn.
+## Project Overview
+  This Analysis looks at 100,000 cancer patient records across India from 2022 to 2025, looking at which cancer shows up the most, who's actually surviving, and where treatment seems to be making the biggest difference. Covering the same dataset across Excel, Power BI, Python and SQL. The analysis explores patient demographics, cancer types, disease staging, treatment approaches / type and survival outcomes.
+
+## Key Insights — What the data actually says 
+
+- **Breast cancer is by far the most common diagnosis** in this dataset — its bar is roughly double the next highest (Oral Cancer), and the drop-off continues steadily down through Cervical, Lung, Colorectal, Stomach, Prostate, Leukemia, and Ovarian.
+- **63.58% of patients in this dataset are deceased, 36.42% are alive.** That's a heavy number, and it's the headline stat the rest of the dashboard is really explaining.
+- **Adults make up the overwhelming majority of cases**, followed by Seniors, then Young Adults, with Pediatric cases barely registering — cancer in this dataset is overwhelmingly an adult and senior condition, not a pediatric one.
+- **Stage III is the most common stage at diagnosis**, followed by Stage II and Stage IV, with Stage I being the smallest slice. Most patients aren't being caught early — they're showing up once the disease has already progressed.
+- **Survival months don't vary hugely by treatment type** — surgery, radiation, chemo, targeted therapy, and combinations all sit in a fairly similar range, suggesting no single treatment is a dramatic outlier compared to the others in this dataset.
+
+## Recommendations — So what would this actually mean for a health system?
+
+- **Push harder on early detection, specifically for breast cancer.** Since it's both the most common diagnosis and Stage III is the most common stage at diagnosis, a lot of these cases are likely being caught later than they could be. Earlier screening could shift that stage distribution meaningfully.
+- **Pediatric cancer being such a small slice doesn't mean it should be ignored** — it likely means pediatric cases need entirely separate protocols and resourcing rather than being folded into general adult treatment planning.
+- **Since treatment type isn't showing huge survival differences on its own, stage at diagnosis is probably the bigger lever.** Resources might do more good going toward catching cancer earlier (screening access, awareness) than toward debating which treatment protocol is marginally better.
+- **The regional spread (visible on the state map) is worth investigating further** — if certain states show heavier patient concentration, that could point to either higher incidence or just better access to diagnosis and reporting in those areas, which are two very different problems.
+
+## What I built it in, and why four times
+
+**Excel** — cleaned and explored the data, first pass at survival and outcome breakdowns.
+**Power BI** — the main dashboard. Cancer Type and Gender as slicers, with charts covering survival by cancer type, survival months by treatment, age group, outcomes by stage, and a map of patients across Indian states.
+**SQL** — same KPIs rebuilt as queries against the dataset.
+**Python** — same analysis again in a notebook, pandas and matplotlib doing the work.
+
+Same reasoning as the rest of the portfolio — four tools, same questions, because the point isn't the dashboard, it's proving the logic holds up across all of them.
+
+## Dataset
+- **Source:** Kaggle
+- **Records:** 100,000 rows
+- **Timeframe:** 2022–2025
+- **Columns:** Patient_ID, Age, Gender, State, City, Hospital_Name, Cancer_Type, Stage, Treatment_Type, Diagnosis_Date, Survival_Months, Status, Age_Group
+
 
 ## Files in This Repository
 - `india_cancer_patients_cleaned.csv` — Cleaned dataset
