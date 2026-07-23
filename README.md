@@ -50,6 +50,6 @@ Same reasoning as the rest of the portfolio — four tools, same questions, beca
 ## Files in This Repository
 - `india_cancer_patients_cleaned.csv` — Cleaned dataset
 - `india_cancer_patients_dashboard.xlsx` — Excel dashboard
-- Power BI dashboard file/screenshot
+-` Power BI dashboard`
 - `indian_patients_SQL.sql` — SQL queries
 - `india_cancer_patients_analysis.ipynb` — Python notebook
